@@ -17,7 +17,7 @@
                BlueprintIdentifier = "C044440B28908026004BDF89"
                BuildableName = "AutoMarkExt.app"
                BlueprintName = "AutoMarkExt"
-               ReferencedContainer = "container:AutoMarkExt.xcodeproj">
+               ReferencedContainer = "container:EasyMarks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C044441C28908026004BDF89"
                BuildableName = "AutoMarkExtTests.xctest"
-               BlueprintName = "AutoMarkExtTests"
-               ReferencedContainer = "container:AutoMarkExt.xcodeproj">
+               BlueprintName = "EasyMarksTests"
+               ReferencedContainer = "container:EasyMarks.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -44,8 +44,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C044442628908026004BDF89"
                BuildableName = "AutoMarkExtUITests.xctest"
-               BlueprintName = "AutoMarkExtUITests"
-               ReferencedContainer = "container:AutoMarkExt.xcodeproj">
+               BlueprintName = "EasyMarksUITests"
+               ReferencedContainer = "container:EasyMarks.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -67,7 +67,7 @@
             BlueprintIdentifier = "C044440B28908026004BDF89"
             BuildableName = "AutoMarkExt.app"
             BlueprintName = "AutoMarkExt"
-            ReferencedContainer = "container:AutoMarkExt.xcodeproj">
+            ReferencedContainer = "container:EasyMarks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -84,7 +84,7 @@
             BlueprintIdentifier = "C044440B28908026004BDF89"
             BuildableName = "AutoMarkExt.app"
             BlueprintName = "AutoMarkExt"
-            ReferencedContainer = "container:AutoMarkExt.xcodeproj">
+            ReferencedContainer = "container:EasyMarks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

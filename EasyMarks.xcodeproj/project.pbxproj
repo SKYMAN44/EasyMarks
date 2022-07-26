@@ -78,9 +78,9 @@
 		C044441328908026004BDF89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C044441628908026004BDF89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C044441828908026004BDF89 /* AutoMark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoMark.entitlements; sourceTree = "<group>"; };
-		C044441D28908026004BDF89 /* AutoMarkExtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoMarkExtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C044441D28908026004BDF89 /* EasyMarksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMarksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C044442128908026004BDF89 /* AutoMarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMarkTests.swift; sourceTree = "<group>"; };
-		C044442728908026004BDF89 /* AutoMarkExtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoMarkExtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C044442728908026004BDF89 /* EasyMarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMarksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C044442B28908026004BDF89 /* AutoMarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMarkUITests.swift; sourceTree = "<group>"; };
 		C044442D28908026004BDF89 /* AutoMarkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMarkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C044443E28908080004BDF89 /* EasyMarks.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EasyMarks.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,8 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				C044440C28908026004BDF89 /* AutoMarkExt.app */,
-				C044441D28908026004BDF89 /* AutoMarkExtTests.xctest */,
-				C044442728908026004BDF89 /* AutoMarkExtUITests.xctest */,
+				C044441D28908026004BDF89 /* EasyMarksTests.xctest */,
+				C044442728908026004BDF89 /* EasyMarksUITests.xctest */,
 				C044443E28908080004BDF89 /* EasyMarks.appex */,
 			);
 			name = Products;
@@ -220,9 +220,9 @@
 			productReference = C044440C28908026004BDF89 /* AutoMarkExt.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C044441C28908026004BDF89 /* AutoMarkExtTests */ = {
+		C044441C28908026004BDF89 /* EasyMarksTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C044443428908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkExtTests" */;
+			buildConfigurationList = C044443428908026004BDF89 /* Build configuration list for PBXNativeTarget "EasyMarksTests" */;
 			buildPhases = (
 				C044441928908026004BDF89 /* Sources */,
 				C044441A28908026004BDF89 /* Frameworks */,
@@ -233,14 +233,14 @@
 			dependencies = (
 				C044441F28908026004BDF89 /* PBXTargetDependency */,
 			);
-			name = AutoMarkExtTests;
+			name = EasyMarksTests;
 			productName = AutoMarkTests;
-			productReference = C044441D28908026004BDF89 /* AutoMarkExtTests.xctest */;
+			productReference = C044441D28908026004BDF89 /* EasyMarksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C044442628908026004BDF89 /* AutoMarkExtUITests */ = {
+		C044442628908026004BDF89 /* EasyMarksUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C044443728908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkExtUITests" */;
+			buildConfigurationList = C044443728908026004BDF89 /* Build configuration list for PBXNativeTarget "EasyMarksUITests" */;
 			buildPhases = (
 				C044442328908026004BDF89 /* Sources */,
 				C044442428908026004BDF89 /* Frameworks */,
@@ -251,9 +251,9 @@
 			dependencies = (
 				C044442928908026004BDF89 /* PBXTargetDependency */,
 			);
-			name = AutoMarkExtUITests;
+			name = EasyMarksUITests;
 			productName = AutoMarkUITests;
-			productReference = C044442728908026004BDF89 /* AutoMarkExtUITests.xctest */;
+			productReference = C044442728908026004BDF89 /* EasyMarksUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		C044443D28908080004BDF89 /* EasyMarks */ = {
@@ -300,7 +300,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C044440728908026004BDF89 /* Build configuration list for PBXProject "AutoMarkExt" */;
+			buildConfigurationList = C044440728908026004BDF89 /* Build configuration list for PBXProject "EasyMarks" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -314,8 +314,8 @@
 			projectRoot = "";
 			targets = (
 				C044440B28908026004BDF89 /* AutoMarkExt */,
-				C044441C28908026004BDF89 /* AutoMarkExtTests */,
-				C044442628908026004BDF89 /* AutoMarkExtUITests */,
+				C044441C28908026004BDF89 /* EasyMarksTests */,
+				C044442628908026004BDF89 /* EasyMarksUITests */,
 				C044443D28908080004BDF89 /* EasyMarks */,
 			);
 		};
@@ -608,7 +608,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoMarkExt.app/Contents/MacOS/AutoMarkExt";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyMarks.app/Contents/MacOS/EasyMarks";
 			};
 			name = Debug;
 		};
@@ -627,7 +627,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoMarkExt.app/Contents/MacOS/AutoMarkExt";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyMarks.app/Contents/MacOS/EasyMarks";
 			};
 			name = Release;
 		};
@@ -724,7 +724,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C044440728908026004BDF89 /* Build configuration list for PBXProject "AutoMarkExt" */ = {
+		C044440728908026004BDF89 /* Build configuration list for PBXProject "EasyMarks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C044442F28908026004BDF89 /* Debug */,
@@ -742,7 +742,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C044443428908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkExtTests" */ = {
+		C044443428908026004BDF89 /* Build configuration list for PBXNativeTarget "EasyMarksTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C044443528908026004BDF89 /* Debug */,
@@ -751,7 +751,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C044443728908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkExtUITests" */ = {
+		C044443728908026004BDF89 /* Build configuration list for PBXNativeTarget "EasyMarksUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C044443828908026004BDF89 /* Debug */,

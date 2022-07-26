@@ -18,7 +18,7 @@
                BlueprintIdentifier = "C044443D28908080004BDF89"
                BuildableName = "EasyMarks.appex"
                BlueprintName = "EasyMarks"
-               ReferencedContainer = "container:AutoMarkExt.xcodeproj">
+               ReferencedContainer = "container:EasyMarks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -32,7 +32,7 @@
                BlueprintIdentifier = "C044440B28908026004BDF89"
                BuildableName = "AutoMarkExt.app"
                BlueprintName = "AutoMarkExt"
-               ReferencedContainer = "container:AutoMarkExt.xcodeproj">
+               ReferencedContainer = "container:EasyMarks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -68,7 +68,7 @@
             BlueprintIdentifier = "C044440B28908026004BDF89"
             BuildableName = "AutoMarkExt.app"
             BlueprintName = "AutoMarkExt"
-            ReferencedContainer = "container:AutoMarkExt.xcodeproj">
+            ReferencedContainer = "container:EasyMarks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -87,7 +87,7 @@
             BlueprintIdentifier = "C044440B28908026004BDF89"
             BuildableName = "AutoMarkExt.app"
             BlueprintName = "AutoMarkExt"
-            ReferencedContainer = "container:AutoMarkExt.xcodeproj">
+            ReferencedContainer = "container:EasyMarks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
