@@ -14,6 +14,12 @@
 		C044442228908026004BDF89 /* AutoMarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044442128908026004BDF89 /* AutoMarkTests.swift */; };
 		C044442C28908026004BDF89 /* AutoMarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044442B28908026004BDF89 /* AutoMarkUITests.swift */; };
 		C044442E28908026004BDF89 /* AutoMarkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044442D28908026004BDF89 /* AutoMarkUITestsLaunchTests.swift */; };
+		C044444128908080004BDF89 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C044444028908080004BDF89 /* Cocoa.framework */; };
+		C044444628908080004BDF89 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044444528908080004BDF89 /* SourceEditorExtension.swift */; };
+		C044444828908080004BDF89 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044444728908080004BDF89 /* SourceEditorCommand.swift */; };
+		C044444D28908080004BDF89 /* EasyMarks.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C044443E28908080004BDF89 /* EasyMarks.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C08F16CC28908F5F0034290F /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C044444228908080004BDF89 /* XcodeKit.framework */; };
+		C08F16CD28908F5F0034290F /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C044444228908080004BDF89 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,20 +37,59 @@
 			remoteGlobalIDString = C044440B28908026004BDF89;
 			remoteInfo = AutoMark;
 		};
+		C044444B28908080004BDF89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C044440428908026004BDF89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C044443D28908080004BDF89;
+			remoteInfo = EasyMarks;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C044445128908080004BDF89 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C044444D28908080004BDF89 /* EasyMarks.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C08F16CE28908F5F0034290F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C08F16CD28908F5F0034290F /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		C044440C28908026004BDF89 /* AutoMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C044440C28908026004BDF89 /* AutoMarkExt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoMarkExt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C044440F28908026004BDF89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C044441128908026004BDF89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C044441328908026004BDF89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C044441628908026004BDF89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C044441828908026004BDF89 /* AutoMark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoMark.entitlements; sourceTree = "<group>"; };
-		C044441D28908026004BDF89 /* AutoMarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoMarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C044441D28908026004BDF89 /* AutoMarkExtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoMarkExtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C044442128908026004BDF89 /* AutoMarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMarkTests.swift; sourceTree = "<group>"; };
-		C044442728908026004BDF89 /* AutoMarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoMarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C044442728908026004BDF89 /* AutoMarkExtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoMarkExtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C044442B28908026004BDF89 /* AutoMarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMarkUITests.swift; sourceTree = "<group>"; };
 		C044442D28908026004BDF89 /* AutoMarkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMarkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C044443E28908080004BDF89 /* EasyMarks.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EasyMarks.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C044444028908080004BDF89 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C044444228908080004BDF89 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		C044444528908080004BDF89 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		C044444728908080004BDF89 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		C044444928908080004BDF89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C044444A28908080004BDF89 /* EasyMarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyMarks.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +114,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C044443B28908080004BDF89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C044444128908080004BDF89 /* Cocoa.framework in Frameworks */,
+				C08F16CC28908F5F0034290F /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +132,8 @@
 				C044440E28908026004BDF89 /* AutoMark */,
 				C044442028908026004BDF89 /* AutoMarkTests */,
 				C044442A28908026004BDF89 /* AutoMarkUITests */,
+				C044444428908080004BDF89 /* EasyMarks */,
+				C044443F28908080004BDF89 /* Frameworks */,
 				C044440D28908026004BDF89 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +141,10 @@
 		C044440D28908026004BDF89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C044440C28908026004BDF89 /* AutoMark.app */,
-				C044441D28908026004BDF89 /* AutoMarkTests.xctest */,
-				C044442728908026004BDF89 /* AutoMarkUITests.xctest */,
+				C044440C28908026004BDF89 /* AutoMarkExt.app */,
+				C044441D28908026004BDF89 /* AutoMarkExtTests.xctest */,
+				C044442728908026004BDF89 /* AutoMarkExtUITests.xctest */,
+				C044443E28908080004BDF89 /* EasyMarks.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,29 +178,51 @@
 			path = AutoMarkUITests;
 			sourceTree = "<group>";
 		};
+		C044443F28908080004BDF89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C044444028908080004BDF89 /* Cocoa.framework */,
+				C044444228908080004BDF89 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C044444428908080004BDF89 /* EasyMarks */ = {
+			isa = PBXGroup;
+			children = (
+				C044444528908080004BDF89 /* SourceEditorExtension.swift */,
+				C044444728908080004BDF89 /* SourceEditorCommand.swift */,
+				C044444928908080004BDF89 /* Info.plist */,
+				C044444A28908080004BDF89 /* EasyMarks.entitlements */,
+			);
+			path = EasyMarks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C044440B28908026004BDF89 /* AutoMark */ = {
+		C044440B28908026004BDF89 /* AutoMarkExt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C044443128908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMark" */;
+			buildConfigurationList = C044443128908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkExt" */;
 			buildPhases = (
 				C044440828908026004BDF89 /* Sources */,
 				C044440928908026004BDF89 /* Frameworks */,
 				C044440A28908026004BDF89 /* Resources */,
+				C044445128908080004BDF89 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C044444C28908080004BDF89 /* PBXTargetDependency */,
 			);
-			name = AutoMark;
+			name = AutoMarkExt;
 			productName = AutoMark;
-			productReference = C044440C28908026004BDF89 /* AutoMark.app */;
+			productReference = C044440C28908026004BDF89 /* AutoMarkExt.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C044441C28908026004BDF89 /* AutoMarkTests */ = {
+		C044441C28908026004BDF89 /* AutoMarkExtTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C044443428908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkTests" */;
+			buildConfigurationList = C044443428908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkExtTests" */;
 			buildPhases = (
 				C044441928908026004BDF89 /* Sources */,
 				C044441A28908026004BDF89 /* Frameworks */,
@@ -154,14 +233,14 @@
 			dependencies = (
 				C044441F28908026004BDF89 /* PBXTargetDependency */,
 			);
-			name = AutoMarkTests;
+			name = AutoMarkExtTests;
 			productName = AutoMarkTests;
-			productReference = C044441D28908026004BDF89 /* AutoMarkTests.xctest */;
+			productReference = C044441D28908026004BDF89 /* AutoMarkExtTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C044442628908026004BDF89 /* AutoMarkUITests */ = {
+		C044442628908026004BDF89 /* AutoMarkExtUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C044443728908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkUITests" */;
+			buildConfigurationList = C044443728908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkExtUITests" */;
 			buildPhases = (
 				C044442328908026004BDF89 /* Sources */,
 				C044442428908026004BDF89 /* Frameworks */,
@@ -172,10 +251,28 @@
 			dependencies = (
 				C044442928908026004BDF89 /* PBXTargetDependency */,
 			);
-			name = AutoMarkUITests;
+			name = AutoMarkExtUITests;
 			productName = AutoMarkUITests;
-			productReference = C044442728908026004BDF89 /* AutoMarkUITests.xctest */;
+			productReference = C044442728908026004BDF89 /* AutoMarkExtUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C044443D28908080004BDF89 /* EasyMarks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C044444E28908080004BDF89 /* Build configuration list for PBXNativeTarget "EasyMarks" */;
+			buildPhases = (
+				C044443A28908080004BDF89 /* Sources */,
+				C044443B28908080004BDF89 /* Frameworks */,
+				C044443C28908080004BDF89 /* Resources */,
+				C08F16CE28908F5F0034290F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyMarks;
+			productName = EasyMarks;
+			productReference = C044443E28908080004BDF89 /* EasyMarks.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -198,9 +295,12 @@
 						CreatedOnToolsVersion = 13.3;
 						TestTargetID = C044440B28908026004BDF89;
 					};
+					C044443D28908080004BDF89 = {
+						CreatedOnToolsVersion = 13.3;
+					};
 				};
 			};
-			buildConfigurationList = C044440728908026004BDF89 /* Build configuration list for PBXProject "AutoMark" */;
+			buildConfigurationList = C044440728908026004BDF89 /* Build configuration list for PBXProject "AutoMarkExt" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -213,9 +313,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C044440B28908026004BDF89 /* AutoMark */,
-				C044441C28908026004BDF89 /* AutoMarkTests */,
-				C044442628908026004BDF89 /* AutoMarkUITests */,
+				C044440B28908026004BDF89 /* AutoMarkExt */,
+				C044441C28908026004BDF89 /* AutoMarkExtTests */,
+				C044442628908026004BDF89 /* AutoMarkExtUITests */,
+				C044443D28908080004BDF89 /* EasyMarks */,
 			);
 		};
 /* End PBXProject section */
@@ -238,6 +339,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C044442528908026004BDF89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C044443C28908080004BDF89 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,18 +381,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C044443A28908080004BDF89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C044444628908080004BDF89 /* SourceEditorExtension.swift in Sources */,
+				C044444828908080004BDF89 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		C044441F28908026004BDF89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C044440B28908026004BDF89 /* AutoMark */;
+			target = C044440B28908026004BDF89 /* AutoMarkExt */;
 			targetProxy = C044441E28908026004BDF89 /* PBXContainerItemProxy */;
 		};
 		C044442928908026004BDF89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C044440B28908026004BDF89 /* AutoMark */;
+			target = C044440B28908026004BDF89 /* AutoMarkExt */;
 			targetProxy = C044442828908026004BDF89 /* PBXContainerItemProxy */;
+		};
+		C044444C28908080004BDF89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C044443D28908080004BDF89 /* EasyMarks */;
+			targetProxy = C044444B28908080004BDF89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -416,9 +538,11 @@
 		C044443228908026004BDF89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AutoMark/AutoMark.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -443,9 +567,11 @@
 		C044443328908026004BDF89 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AutoMark/AutoMark.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -482,7 +608,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoMark.app/Contents/MacOS/AutoMark";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoMarkExt.app/Contents/MacOS/AutoMarkExt";
 			};
 			name = Debug;
 		};
@@ -501,7 +627,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoMark.app/Contents/MacOS/AutoMark";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoMarkExt.app/Contents/MacOS/AutoMarkExt";
 			};
 			name = Release;
 		};
@@ -539,10 +665,66 @@
 			};
 			name = Release;
 		};
+		C044444F28908080004BDF89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EasyMarks/EasyMarks.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7QZL932B66;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EasyMarks/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EasyMarks;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skyman44.AutoMark.EasyMarks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C044445028908080004BDF89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EasyMarks/EasyMarks.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7QZL932B66;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EasyMarks/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EasyMarks;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skyman44.AutoMark.EasyMarks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C044440728908026004BDF89 /* Build configuration list for PBXProject "AutoMark" */ = {
+		C044440728908026004BDF89 /* Build configuration list for PBXProject "AutoMarkExt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C044442F28908026004BDF89 /* Debug */,
@@ -551,7 +733,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C044443128908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMark" */ = {
+		C044443128908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkExt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C044443228908026004BDF89 /* Debug */,
@@ -560,7 +742,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C044443428908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkTests" */ = {
+		C044443428908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkExtTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C044443528908026004BDF89 /* Debug */,
@@ -569,11 +751,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C044443728908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkUITests" */ = {
+		C044443728908026004BDF89 /* Build configuration list for PBXNativeTarget "AutoMarkExtUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C044443828908026004BDF89 /* Debug */,
 				C044443928908026004BDF89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C044444E28908080004BDF89 /* Build configuration list for PBXNativeTarget "EasyMarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C044444F28908080004BDF89 /* Debug */,
+				C044445028908080004BDF89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
