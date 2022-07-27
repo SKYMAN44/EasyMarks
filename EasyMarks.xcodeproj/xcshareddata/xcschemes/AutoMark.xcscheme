@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C044441C28908026004BDF89"
-               BuildableName = "AutoMarkExtTests.xctest"
+               BuildableName = "EasyMarksTests.xctest"
                BlueprintName = "EasyMarksTests"
                ReferencedContainer = "container:EasyMarks.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C044442628908026004BDF89"
-               BuildableName = "AutoMarkExtUITests.xctest"
+               BuildableName = "EasyMarksUITests.xctest"
                BlueprintName = "EasyMarksUITests"
                ReferencedContainer = "container:EasyMarks.xcodeproj">
             </BuildableReference>
