@@ -70,7 +70,6 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             ) {
                 return i
             }
-
             // check if line contains something except spaces/tabs
             guard let regex = createRegex(rule: "[a-zA-Z_][0-9a-zA-Z_]*") else { return nil }
             if let matches = regex.firstMatch(
@@ -107,19 +106,13 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     }
 
     private func createRegex(rule: String) -> NSRegularExpression? {
-        var regex: NSRegularExpression?
-        do {
-             regex = try NSRegularExpression(
-                pattern: rule,
-                options: NSRegularExpression.Options.caseInsensitive
-            )
-        }
-        catch {
-            fatalError("Can't create regular expression")
+        guard let regex = try? NSRegularExpression(
+            pattern: rule,
+            options: NSRegularExpression.Options.caseInsensitive
+        )
+        else {
+            return nil
         }
         return regex
     }
 }
-
-
-// fixedMark = fixedMark.components(separatedBy: .newlines).joined()
