@@ -10,6 +10,8 @@
 		C0070CE628988B44007BDA0B /* AutoMarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0070CE528988B44007BDA0B /* AutoMarkApp.swift */; };
 		C0070CE828988BFA007BDA0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0070CE728988BFA007BDA0B /* ContentView.swift */; };
 		C0070CEA28988E30007BDA0B /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0070CE928988E30007BDA0B /* UserDefaults.swift */; };
+		C0070CEF289DF0E5007BDA0B /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0070CEE289DF0E5007BDA0B /* SignatureView.swift */; };
+		C0070CF2289F3842007BDA0B /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0070CE928988E30007BDA0B /* UserDefaults.swift */; };
 		C044441028908026004BDF89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044440F28908026004BDF89 /* AppDelegate.swift */; };
 		C044441428908026004BDF89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C044441328908026004BDF89 /* Assets.xcassets */; };
 		C044441728908026004BDF89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C044441528908026004BDF89 /* Main.storyboard */; };
@@ -77,6 +79,7 @@
 		C0070CE528988B44007BDA0B /* AutoMarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMarkApp.swift; sourceTree = "<group>"; };
 		C0070CE728988BFA007BDA0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C0070CE928988E30007BDA0B /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		C0070CEE289DF0E5007BDA0B /* SignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
 		C044440C28908026004BDF89 /* AutoMarkExt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoMarkExt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C044440F28908026004BDF89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C044441328908026004BDF89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0070CED289DF0D5007BDA0B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C0070CEE289DF0E5007BDA0B /* SignatureView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		C044440328908026004BDF89 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +167,7 @@
 		C044440E28908026004BDF89 /* AutoMark */ = {
 			isa = PBXGroup;
 			children = (
+				C0070CED289DF0D5007BDA0B /* Components */,
 				C044440F28908026004BDF89 /* AppDelegate.swift */,
 				C0070CE528988B44007BDA0B /* AutoMarkApp.swift */,
 				C0070CE728988BFA007BDA0B /* ContentView.swift */,
@@ -367,6 +379,7 @@
 			files = (
 				C0070CEA28988E30007BDA0B /* UserDefaults.swift in Sources */,
 				C0070CE628988B44007BDA0B /* AutoMarkApp.swift in Sources */,
+				C0070CEF289DF0E5007BDA0B /* SignatureView.swift in Sources */,
 				C044441028908026004BDF89 /* AppDelegate.swift in Sources */,
 				C0070CE828988BFA007BDA0B /* ContentView.swift in Sources */,
 			);
@@ -395,6 +408,7 @@
 			files = (
 				C044444628908080004BDF89 /* SourceEditorExtension.swift in Sources */,
 				C044444828908080004BDF89 /* SourceEditorCommand.swift in Sources */,
+				C0070CF2289F3842007BDA0B /* UserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,8 +579,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = skyman44.AutoMark;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyman44.EasyMarks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -594,8 +609,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = skyman44.AutoMark;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyman44.EasyMarks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -693,8 +709,9 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = skyman44.AutoMark.EasyMarks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyman44.EasyMarks.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -721,8 +738,9 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = skyman44.AutoMark.EasyMarks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyman44.EasyMarks.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

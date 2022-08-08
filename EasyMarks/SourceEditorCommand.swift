@@ -8,7 +8,10 @@
 import Foundation
 import XcodeKit
 
+
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
+    private let storage = UserDefaults(suiteName: MarkSuit.APP_GROUP_ID)!
+
     private var cachedLines: NSMutableArray = []
 
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
@@ -89,7 +92,8 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     // actually uselessFunction
     private func fixIfMarkIncorrect(markLine: String, correctMark: String) -> String {
         var fixedMark = markLine
-        if(markLine != correctMark) {
+        let option = storage.fixExistingMarks
+        if(markLine != correctMark && option) {
             fixedMark = correctMark
         }
         return fixedMark
