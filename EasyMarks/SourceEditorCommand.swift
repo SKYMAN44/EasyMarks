@@ -49,6 +49,10 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
                             let correctMark = fixIfMarkIncorrect(markLine: lines[markIndex] as! String, correctMark: correctMark)
                             lines[markIndex] = correctMark
                         } else {
+                            let numberOfSpaces = storage.numberOfSpaces
+                            for i in 0..<numberOfSpaces {
+                                lines.insert("\n", at: index)
+                            }
                             lines.insert(correctMark, at: index)
                             cachedLines.add(line)
                         }
@@ -89,7 +93,6 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         return nil
     }
 
-    // actually uselessFunction
     private func fixIfMarkIncorrect(markLine: String, correctMark: String) -> String {
         var fixedMark = markLine
         let option = storage.fixExistingMarks
