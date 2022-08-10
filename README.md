@@ -2,7 +2,7 @@
 Create Marks easily
 
 <p align="center">
-    <img src="Design/icon.png" width="300" max-width="50%" alt="AutoMark" />
+    <img src="Design/icon.png" width="256" max-width="50%" alt="AutoMark" />
 </p>
 
 
