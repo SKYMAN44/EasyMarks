@@ -22,6 +22,7 @@
 		C044444628908080004BDF89 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044444528908080004BDF89 /* SourceEditorExtension.swift */; };
 		C044444828908080004BDF89 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044444728908080004BDF89 /* SourceEditorCommand.swift */; };
 		C044444D28908080004BDF89 /* EasyMarks.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C044443E28908080004BDF89 /* EasyMarks.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C08783E528A43FE8009DD819 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C08783E428A43FE8009DD819 /* Icon.png */; };
 		C08F16CC28908F5F0034290F /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C044444228908080004BDF89 /* XcodeKit.framework */; };
 		C08F16CD28908F5F0034290F /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C044444228908080004BDF89 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -97,6 +98,8 @@
 		C044444728908080004BDF89 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		C044444928908080004BDF89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C044444A28908080004BDF89 /* EasyMarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyMarks.entitlements; sourceTree = "<group>"; };
+		C08783E228A43295009DD819 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C08783E428A43FE8009DD819 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 		C044440328908026004BDF89 = {
 			isa = PBXGroup;
 			children = (
+				C08783E328A43FC6009DD819 /* Design */,
+				C08783E228A43295009DD819 /* README.md */,
 				C044440E28908026004BDF89 /* AutoMark */,
 				C044442028908026004BDF89 /* AutoMarkTests */,
 				C044442A28908026004BDF89 /* AutoMarkUITests */,
@@ -214,6 +219,14 @@
 				C044444A28908080004BDF89 /* EasyMarks.entitlements */,
 			);
 			path = EasyMarks;
+			sourceTree = "<group>";
+		};
+		C08783E328A43FC6009DD819 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				C08783E428A43FE8009DD819 /* Icon.png */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C044441428908026004BDF89 /* Assets.xcassets in Resources */,
+				C08783E528A43FE8009DD819 /* Icon.png in Resources */,
 				C044441728908026004BDF89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
