@@ -34,8 +34,8 @@ Create Marks easily
 
 - Open Xcode
 - Go to Xcode > Preferences > Key Bindings
-- Type *'Jsonify'* in search field
-- Assign <kbd>⌃</kbd> + <kbd>J</kbd> to *Jsonify* command
+- Type *'AutoMark'* in search field
+- Assign <kbd>⌃</kbd> + <kbd>J</kbd> to *AutoMark* command
 
 
 ## Feedback
