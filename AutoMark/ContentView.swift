@@ -13,7 +13,6 @@ struct ContentView: View {
     @State private var isFixMark = UserDefaults(suiteName: MarkSuit.APP_GROUP_ID)!.fixExistingMarks
     
     @State private var text = "0"
-    @State private var spaceCounter = 0
     @State private var fixMark = true
 
     var body: some View {
@@ -48,7 +47,7 @@ struct ContentView: View {
                 Text("Fix existing MARK")
                 Toggle(
                     "",
-                    isOn: $fixMark
+                    isOn: $isFixMark
                 ).toggleStyle(SwitchToggleStyle(tint: .purple))
             }
             Spacer()
@@ -64,7 +63,7 @@ struct ContentView: View {
 
     func save(){
         storage.numberOfSpaces = NumberOfSpaces
-        storage.fixExistingMarks = fixMark
+        storage.fixExistingMarks = isFixMark
     }
 }
 

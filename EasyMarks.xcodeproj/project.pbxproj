@@ -25,6 +25,7 @@
 		C08783E528A43FE8009DD819 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C08783E428A43FE8009DD819 /* Icon.png */; };
 		C08F16CC28908F5F0034290F /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C044444228908080004BDF89 /* XcodeKit.framework */; };
 		C08F16CD28908F5F0034290F /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C044444228908080004BDF89 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0937B5228BC0C360027B48B /* SourceImportsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0937B5128BC0C360027B48B /* SourceImportsCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		C044444A28908080004BDF89 /* EasyMarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyMarks.entitlements; sourceTree = "<group>"; };
 		C08783E228A43295009DD819 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C08783E428A43FE8009DD819 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C0937B5128BC0C360027B48B /* SourceImportsCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceImportsCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 			children = (
 				C044444528908080004BDF89 /* SourceEditorExtension.swift */,
 				C044444728908080004BDF89 /* SourceEditorCommand.swift */,
+				C0937B5128BC0C360027B48B /* SourceImportsCommand.swift */,
 				C044444928908080004BDF89 /* Info.plist */,
 				C044444A28908080004BDF89 /* EasyMarks.entitlements */,
 			);
@@ -420,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0937B5228BC0C360027B48B /* SourceImportsCommand.swift in Sources */,
 				C044444628908080004BDF89 /* SourceEditorExtension.swift in Sources */,
 				C044444828908080004BDF89 /* SourceEditorCommand.swift in Sources */,
 				C0070CF2289F3842007BDA0B /* UserDefaults.swift in Sources */,
