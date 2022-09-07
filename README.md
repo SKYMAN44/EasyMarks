@@ -22,7 +22,7 @@ Create Marks easily
 
 ## Installation
 
-- Download latest *AutoMark* package from the [Releases](https://github.com/SKYMAN44/EasyMarks/releases/tag/1.0.1).
+- Download latest *AutoMark* package from the [Releases](https://github.com/SKYMAN44/EasyMarks/releases/tag/1.0.2).
 - Copy *AutoMark* to your *Applications* folder.
 - Launch *AutoMark* once. You can close it immediately afterwards.
 - Go to <kbd>System Preferences</kbd> > <kbd>Extensions</kbd> > <kbd>Xcode Source Editor</kbd> > select <kbd>AutoMark</kbd>
