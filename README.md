@@ -15,6 +15,7 @@ Create Marks easily
 - [X] ⚒ Generate Mark automatically for extensions
 - [X] ⚒ Set number of empty lines between Mark and extension
 - [X] ⚒ Enable feature for correcting existing extensions Marks.
+- [X] ⚒ Sort imports
 
 ## Demo
 
