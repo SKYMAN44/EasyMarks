@@ -16,7 +16,6 @@ class SourceImportsCommand: NSObject, XCSourceEditorCommand {
 
         let lines = invocation.buffer.lines
 
-
         var imports: [String] = []
         var isFirst: Bool = true
         var startIndex: Int?
@@ -36,7 +35,6 @@ class SourceImportsCommand: NSObject, XCSourceEditorCommand {
                 break
             }
         }
-
         guard let start = startIndex,
               let end = endIndex
         else {
